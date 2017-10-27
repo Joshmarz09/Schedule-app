@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body bgcolor="lightblue">
+	<center><h1><font style="font-size: 70px;font-family: 'Calibri' " >My Schedule</font></h1></center>
+
+<input readonly="true" id="date" size="100%" style="background-color: gray;border-color: transparent;font-size: 50px; padding-left: 15px; padding-top: 10px; font-family: 'Calibri' "><br>
+<input readonly="true" id="title" style="background-color: transparent;border-color: transparent;font-size: 50px; padding-left: 15px; padding-top: 10px; font-family: 'Calibri' "><br>
+<input readonly="true" id="task" style="background-color: transparent;border-color: transparent;font-size: 50px; padding-left: 15px; padding-top: 10px; font-family: 'Calibri' "><br>
+<input readonly="true" id="start" style="background-color: transparent;border-color: transparent;font-size: 50px; padding-left: 15px; padding-top: 10px; font-family: 'Calibri' "><br>
+<input readonly="true" id="end" style="background-color: transparent;border-color: transparent;font-size: 50px; padding-left: 15px; padding-top: 10px; font-family: 'Calibri' "><br>
+</body>
+<script>
+	document.getElementById('title').value = window.localStorage.getItem('title');
+	document.getElementById('task').value = window.localStorage.getItem('task');
+	document.getElementById('date').value = window.localStorage.getItem('date');
+	document.getElementById('start').value = window.localStorage.getItem('start');
+	document.getElementById('end').value = window.localStorage.getItem('end');
+
+</script>
+</html>
